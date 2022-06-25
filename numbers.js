@@ -26,9 +26,9 @@ botonEnviar.addEventListener("click", () => {
       
       
       //Transformación
-      resultadoEjercicio2.innerHTML = "<b>" + "El valor máximo es: " + "</b>" + Math.max(...numeros) +
+      resultadoEjercicio2.innerHTML = "<b>" + "El valor mayor es: " + "</b>" + Math.max(...numeros) +
                       "<br>" + 
-                      "<b>" + "El valor mínimo es: " + "</b>" + Math.min(...numeros)  
+                      "<b>" + "El valor menor es: " + "</b>" + Math.min(...numeros)  
     } else {
       resultadoEjercicio2.textContent = "Ningún número debe ser igual";
     }
