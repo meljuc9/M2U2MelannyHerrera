@@ -1,25 +1,27 @@
-#tituloForm{
-    text-align: center; 
-    font-size: 1.8em; 
-    font-weight: bold;
-    color: #04325a;
-}
-
 #titleExercise{
     text-align: center; 
-    font-size: 1.8em;
+    font-size: 1.2em;
     font-weight: bold;
     background-color: #045b82;
 }
 
 #descriptionExercise, #viñetas{
     color: #04325a;
+    font-size: 1em;
+}
+
+#puntos{
+    font-size: 0.7em;
 }
 
 #labels{
-    font-size: 1.1em;
+    font-size: 0.8em;
     font-weight: bold;
     color: #043f5b;
+}
+
+#nombre, #materia, #valor, #num1, #num2, #num3, #num4{
+    font-size: 0.7em;
 }
 
 #groupButtonExercise1{
@@ -52,4 +54,8 @@
 
 #botonEnviar{
     width: 16em;
+}
+
+#aviso{
+    font-size: 0.6em;
 }
