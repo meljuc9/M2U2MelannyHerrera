@@ -1,0 +1,55 @@
+#tituloForm{
+    text-align: center; 
+    font-size: 1.8em; 
+    font-weight: bold;
+    color: #04325a;
+}
+
+#titleExercise{
+    text-align: center; 
+    font-size: 1.8em;
+    font-weight: bold;
+    background-color: #045b82;
+}
+
+#descriptionExercise, #viñetas{
+    color: #04325a;
+}
+
+#labels{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #043f5b;
+}
+
+#groupButtonExercise1{
+    text-align: right;
+}
+
+#navbar{
+    background-color: #04325a;
+    font-weight: bold;
+    color: white;
+}
+
+#title{
+    font-size: 1.2em;
+    margin-left: 1em;
+}
+
+#message{
+    font-size: 1.2em;
+}
+
+#botonAgregar{
+    float: left;
+    width: 16em;
+}
+
+#botonCalcular{
+    width: 16em;
+}
+
+#botonEnviar{
+    width: 16em;
+}
