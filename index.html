@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <!-- Encabezado -->
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Módulo 2 - Unidad 2</title>
-</head>
-<body>
-    
-</body>
+    <!--  Barra de pestaña -->
+    <title> Módulo 2 - Unidad 2</title>
+    <!--  Link para usar estilos de css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--  Link para icono de pestaña -->
+    <link rel="icon" href="https://marialuisa.foundation/wp-content/uploads/thegem-logos/logo_d2388928f8d95858c851647369f2f680_1x.png">
+    <!--  Link para estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <!-- Cuerpo -->
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+      <img src="https://marialuisa.foundation/wp-content/uploads/2020/02/logoMLMIF-1-150x150.png" 
+          width="60" height="60"  class="d-inline-block align-top"  alt="">
+      <a class="navbar-brand" id="title">
+        Pensamiento lógico y algorítmico
+      </a>
+    </nav><br>
+    <!-- Ejercicios -->
+    <div class="row">
+      <!-- Ejercicio 1 -->
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card text-black border-secondary mb-3">
+              <!-- Titulo de ejercicio 1 -->
+              <div class="card-header text-white" id="titleExercise">
+                Ejercicio 1
+              </div>
+              <!-- Descripción de ejercicio 1 -->
+              <div class="card-body">
+                <h5 class="card-title" id="descriptionExercise">
+                  Crear un algoritmo que le permita al usuario ingresar:
+                </h5>
+                <p class="card-text">
+                  <b id="viñetas">a.</b> Nombre del estudiante, materia o asignaturas a matricular y el valor. <br>
+                  <b id="viñetas">d.</b> Valor de la papelería: que tiene un costo fijo de $20.000 y el carné con valor 
+                              de $8.000.<br>
+                  <b id="viñetas">e.</b> Descuento del 20% sobre el costo de las materias. <br>
+                  Por medio del algoritmo imprimir el valor total de las materias que matriculó el estudiante con el <br>
+                  descuento del 20% más los costos fijos.<br>
+                </p>
+              </div>
+              <!-- Formulario de ejercicio 1 -->
+              <div class="card-footer">
+                <form>
+                  <!-- Titulo del formulario para el ejercicio 1 -->
+                  <br><h5 class="card-title" id="tituloForm"><ins>Valor de las materias</ins></h5><br>
+                  <div class="row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4" id="labels" name="nombreEstudiante">Nombre del estudiante</label>
+                      <input type="text" class="form-control" id="nombre" placeholder="Ingrese el nombre del estudiante">
+                      <small id="aviso" class="form-text text-muted">Ingrese solo letras</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4" id="labels" name="nombreMateria">Materia</label>
+                      <input type="text" class="form-control" id="materia" 
+                          placeholder="Ingrese el nombre de la materiaa matricular">
+                      <small id="aviso" class="form-text text-muted">
+                        Ingrese solo letras
+                      </small>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4" id="labels" name="valorMateria">Valor de la materia</label>
+                      <input type="number" class="form-control" id="valor" 
+                          placeholder="Ingrese el valor la materia">
+                      <small id="aviso" class="form-text text-muted">
+                        Ingrese solo números
+                      </small>
+                    </div>
+                  </div><br>
+                  <div class="form-group" id="groupButtonExercise1">
+                    <button type="button" class="btn btn-success btn-lg" id="botonAgregar">
+                      <b>Agregar materia</b>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-lg" id="botonCalcular">
+                      <b>Calcular descuento</b>
+                    </button>
+                  </div>
+                  <div class="alert alert-info" role="alert" id="message">
+                    <p id="resultadoEjercicio1"></p>
+                  </div> 
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Ejercicio 2 -->
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <div class="card text-black border-secondary mb-3">
+              <!-- Titulo de ejercicio 2 -->
+              <div class="card-header text-white" id="titleExercise">Ejercicio 2</div>
+              <!-- Descripción de ejercicio 2 -->
+              <div class="card-body">
+                <h5 class="card-title" id="descriptionExercise">Desarrolle un algoritmo que permita:</h5>
+                <p class="card-text">
+                  <b id="viñetas">a.</b> Leer cuatro valores numéricos y almacenarlos en las variables A, B, C y D 
+                              respectivamente.<br>
+                  <b id="viñetas">b.</b> El algoritmo debe imprimir cual es el mayor valor y cual es el menor valor. <br>
+                  <b id="viñetas">c.</b> Recuerde verificar que los cuatro valores introducidos por el teclado sean 
+                              valores distintos.<br>
+                  <b id="viñetas">c.</b> Crear un mensaje de alerta en caso que se detecte la introducción de valores 
+                              iguales.<br><br>
+                </p>
+              </div>
+              <!-- Formulario de ejercicio 2 -->
+              <div class="card-footer">
+                <form>
+                  <!-- Titulo del formulario para el ejercicio 2 -->
+                  <br><h5 class="card-title" id="tituloForm"><ins>N° mayor y menor</ins></h5><br>
+                  <div class="row">
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4" id="labels">Primer valor</label>
+                      <input type="number" class="form-control" id="num1" placeholder="Ingrese el primer valor">
+                      <small id="aviso" class="form-text text-muted">Ingrese solo números</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4" id="labels">Segundo valor</label>
+                      <input type="number" class="form-control" id="num2" placeholder="Ingrese el segundo valor">
+                      <small id="aviso" class="form-text text-muted">Ingrese solo números</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputEmail4" id="labels">Tercer valor</label>
+                      <input type="number" class="form-control" id="num3" placeholder="Ingrese el tercer valor">
+                      <small id="aviso" class="form-text text-muted">Ingrese solo números</small>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputPassword4" id="labels">Cuarto valor</label>
+                      <input type="number" class="form-control" id="num4" placeholder="Ingrese el cuarto valor">
+                      <small id="aviso" class="form-text text-muted">Ingrese solo números</small>
+                    </div>            
+                  </div><br>
+                  <center>
+                    <button type="button" class="btn btn-success btn-lg" id="botonEnviar">
+                      <b>Enviar</b>
+                    </button>
+                  </center><br>
+                  <div class="alert alert-info" role="alert" id="message">
+                    <p id="resultadoEjercicio2"></p>
+                  </div>                  
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="numbers.js"></script>
+  <script src="subjects.js"></script>
 </html>
