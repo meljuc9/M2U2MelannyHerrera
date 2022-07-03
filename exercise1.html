@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Encabezado -->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Barra de pestaña -->
+    <title> Módulo 2 - Unidad 2</title>
+    <!-- Link para usar estilos de css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link para icono de pestaña -->
+    <link rel="icon" href="https://marialuisa.foundation/wp-content/uploads/thegem-logos/logo_d2388928f8d95858c851647369f2f680_1x.png">
+    <!-- Link para estilos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  </head>
+  <!-- Cuerpo -->
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar " id="navbar">
+      <img src="https://marialuisa.foundation/wp-content/uploads/2020/02/logoMLMIF-1-150x150.png" width="60" height="60" class="d-inline-block align-top" alt=""> 
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="active" href="exercise1.html">Ejercicio 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="exercise2.html">Ejercicio 2</a>
+        </li>
+      </ul>
+    </nav>
+    <br>
+    <!-- EJERCICIO 1 -->
+    <div class="card">
+      <div class="card-header" id="card-header-principal-title">
+        Ejercicio 1
+      </div>
+      <div class="card-body">
+        <!-- FORMULARIO -->        
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+           <!-- CAMPOS A LLENAR -->
+          <div class="row">
+            <!-- NOMBRE ESTUDIANTE -->
+            <div class="form-group col-md-6">
+              <label id="labels" name="nombreEstudiante">Nombre estudiante</label>
+              <input class="form-control" type="text" name="fullNameStudent" id="fullNameStudent" placeholder="Ingrese el nombre del estudiante">
+              <label class="validation-error hide" id="fullNameStudentValidationError">
+                Este campo no debe quedar vacío.
+              </label>
+            </div>
+            <!-- NOMBRE MATERIA -->
+            <div class="form-group col-md-6">
+              <label id="labels" name="nombreMateria">Nombre materia</label>
+              <input class="form-control" type="text" name="nameMatter" id="nameMatter" placeholder="Ingrese el nombre la materia">
+            </div>
+            <!-- VALOR MATERIA -->
+            <div class="form-group col-md-6">
+              <label id="labels" name="valorMateria">Valor materia</label>
+              <input class="form-control" type="text" name="valor" id="valor" placeholder="Ingrese el valor la materia">
+            </div>
+            <!-- BTN AGREGAR -->
+            <input type="submit" value="Agregar materia" class="btn btn-success btn-sm" id="botonAgregar">
+          </div>
+          
+        </form>
+        <hr>
+        <!-- TABLA Y CALCULO -->
+        <div class="row">
+          <!-- TABLA CON REGISTROS -->
+          <div class="form-group col-md-8">
+            <table class="table table-striped" id="subjectList">
+              <thead>
+                <tr>
+                  <th scope="row" id="column-title-Estudiante">Estudiante</th>
+                  <th scope="row" id="column-title-Asignatura">Asignatura</th>
+                  <th scope="row" id="column-title-Valor">Valor</th>
+                  <th scope="row" id="column-title-Acciones">Acciones</th>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <tr>
+                  <td>Pepe</th>
+                  <td>Cálculo I y II</td>
+                  <td>6,000</td>
+                  <td><a onClick="onEdit(this)" class="btn btn-primary btn-sm">Editar</a>
+                  <a onClick="onDelete(this)" class="btn btn-danger btn-sm">Eliminar</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- CALCULO DE DESCUENTO -->
+          <div class="form-group col-md-4">
+        <!-- BTN CALCULAR
+            <button type="button" class="btn btn-primary btn-sm" id="botonCalcular">
+              <b>Calcular</b>
+            </button>
+            <div class="alert alert-info" role="alert" id="message-alert">
+              <p id="resultadoEjercicio1"></p>
+            </div>
+        -->
+            <!-- BTN EJEMPLO -->
+            <button type="button" class="btn btn-primary btn-sm" id="botonejemplo" onclick="document.getElementById('messageAlert').innerHTML = Date()">
+              <b>Calcular descuento</b>
+            </button>
+            <!-- ALERTA DE TOTAL -->
+            <div class="alert alert-info" role="alert" id="messageAlert">
+              <p id="resultadoEjercicio1"></p>
+            </div>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </body>
+  <script src="subject.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script>
+    swal({
+    title: "Solución - Ejercicio 1",
+    icon: "success",
+    button: "Ingresar",
+    });
+  </script>
+</html>

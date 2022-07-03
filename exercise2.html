@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!-- Encabezado -->
+ <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Barra de pestaña -->
+   <title> Módulo 2 - Unidad 2</title>
+   <!-- Link para usar estilos de css -->
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <!-- Link para icono de pestaña -->
+   <link rel="icon" href="https://marialuisa.foundation/wp-content/uploads/thegem-logos/logo_d2388928f8d95858c851647369f2f680_1x.png">
+   <!-- Link para estilos de Bootstrap -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+   integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ </head>
+ <!-- Cuerpo -->
+ <body>
+  <!-- Barra de Navegación -->
+  <nav class="navbar " id="navbar">
+   <img src="https://marialuisa.foundation/wp-content/uploads/2020/02/logoMLMIF-1-150x150.png" width="60" height="60" class="d-inline-block align-top" alt=""> 
+   <ul class="nav nav-tabs">
+    <li class="nav-item">
+     <a class="nav-link" href="index.html">Inicio</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" href="exercise1.html">Ejercicio 1</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link active" id="active" href="exercise2.html">Ejercicio 2</a>
+    </li>
+   </ul>
+  </nav><br>
+  <!-- EJERCICIO 2 -->
+  <div class="card">
+   <!-- TITULO EJERCICIO 2 -->
+   <div class="card-header" id="card-header-principal-title">
+    Ejercicio 2
+   </div>
+   <!-- CUERPO -->
+   <div class="card-body">
+    <!-- FORMULARIO -->        
+    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+    <!-- CAMPOS A LLENAR -->
+      <div class="row">
+       <div class="form-group col-md-6">
+        <label for="inputEmail4" id="labels">Primer valor</label>
+        <input type="number" class="form-control" id="num1" placeholder="Ingrese el primer valor">
+       </div>
+       <div class="form-group col-md-6">
+        <label id="labels">Segundo valor</label>
+        <input type="number" class="form-control" id="num2" placeholder="Ingrese el segundo valor">
+       </div>
+       <div class="form-group col-md-6">
+        <label for="inputEmail4" id="labels">Tercer valor</label>
+        <input type="number" class="form-control" id="num3" placeholder="Ingrese el tercer valor">
+       </div>
+       <div class="form-group col-md-6">
+        <label id="labels">Cuarto valor</label>
+        <input type="number" class="form-control" id="num4" placeholder="Ingrese el cuarto valor">
+       </div>   
+      </div>
+      <br> 
+     <!-- BTN -->
+     <center>
+      <button type="button" class="btn btn-success btn-sm" id="botonEnviar">
+       <b>Enviar</b>
+      </button>
+     </center><br>
+     <!-- RESULTADO -->
+     <div class="alert alert-info" role="alert" id="message">
+      <br>
+       <p id="resultadoEjercicio2"></p>
+      <br>
+     </div> 
+    </form>
+   </div>        
+  </div>
+ </body>
+ <script src="number.js"></script>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ <script>
+   swal({
+   title: "Solución - Ejercicio 2",
+   icon: "success",
+   button: "Ingresar",
+   });
+ </script>
+</html>
